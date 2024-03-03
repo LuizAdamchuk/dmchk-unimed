@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-600;
+  @apply text-slate-100;
+}
+.circle-chart {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #117c6f 0%,
+    #117c6f var(--percentage),
+    #0a4840 var(--percentage)
+  );
+}
+
+.circle-chart-value {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.2em;
+  font-weight: bold;
+}
+
+/* Menu animation */
+.menu {
+  transform: translateX(-100%);
+  transition: transform 0.9s ease-in-out;
+}
+
+.menu.visible {
+  transform: translateX(0);
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "Faturamento Bruto - R$ Mi": [
+      {
+        "Dez 2020": {
+          "value": 103.3,
+          "percent": -16.8
+        }
+      },
+      {
+        "Nov 2020": {
+          "value": 86.6,
+          "percent": -0.7
+        }
+      },
+      {
+        "Dez 2019": {
+          "value": 89.2,
+          "percent": -3.7
+        }
+      },
+      {
+        "Jan 2021": {
+          "value": 108.4,
+          "percent": 5.2
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "title": "GESTÃO POR RESULTADOS",
+    "sectionData": [
+      {
+        "subtitle": "Indicadores Estratégicos",
+        "data": [
+          "Faturamento",
+          "Custo Assistencial Pré-Pagamento",
+          "Sinistralidade Pré-Pagamento",
+          "Ebitda"
+        ]
+      },
+      {
+        "subtitle": "Financeiro",
+        "data": ["Movimentação Diária de Caixa", "Fluxo de Caixa"]
+      }
+    ]
+  }
+]
