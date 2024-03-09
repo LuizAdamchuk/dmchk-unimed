@@ -1,5 +1,7 @@
 # Dmchk Unimed
 
+![GIF demonstrando a responsividade](<[URL_DO_GIF](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTN3MWhmYncyZjU3OWoyNzBnc2xwbng5ZDdhcmdoamh1MnZ0aHExNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/uFz2O4Kby4moKna5AI/giphy.gif)>)
+
 Um projeto React com Tailwind CSS.
 
 ## 🚀 Começando
