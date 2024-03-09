@@ -1,5 +1,6 @@
 import React from "react";
 import { tv } from "tailwind-variants";
+import { generateResponsiveFontSize } from "../shared";
 
 const tabsComponent = tv({
   base: "text-white  pt-[10px] pb-[10px] ",
@@ -37,18 +38,27 @@ const tabsComponent = tv({
   },
 });
 
-const Tabs = ({ title, size, textcolor, font, backgroundcolor, space }) => {
+const Tabs = ({
+  title,
+  size,
+  textcolor,
+  font,
+  backgroundcolor,
+  space,
+  responsivity,
+}) => {
+  const responsiveFontSize = generateResponsiveFontSize(responsivity, 0.1);
   return (
     <div
-      className={tabsComponent({
+      className={`${tabsComponent({
         size,
         textcolor,
         font,
         backgroundcolor,
         space,
-      })}
+      })} ${responsiveFontSize}`}
     >
-      <h2>{title}</h2>
+      <p>{title}</p>
     </div>
   );
 };

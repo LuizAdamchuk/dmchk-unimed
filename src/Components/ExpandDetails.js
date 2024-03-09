@@ -55,19 +55,19 @@ const ExpandableDetails = ({ data }) => {
           return (
             <div
               key={index}
-              className="bg-[#0A4840] rounded shadow"
+              className="bg-[#0A4840] rounded shadow mb-[0.6rem] sm:mb-[0.6rem] md:mb-[0.8rem]"
               onClick={() => handleExpand(index)}
             >
-              <h2 className="bg-[#093D37] pl-[16px] pr-[16px] pt-[10px] pb-[10px] text-xl font-semibold">
+              <h2 className="bg-[#093D37] pl-[16px] pr-[16px] pt-[10px] pb-[10px] font-semibold text-[1rem] sm:text-[1rem] md:text-[1.1rem] lg:text-[1.2rem]">
                 {title}
               </h2>
               <div className=" mt-[16px] ml-[16px] pb-[16px] flex justify-between bg-[#0A4840]">
                 {actualValues && actualValues.length > 0 ? (
                   <p className="text-lg flex items-center ">
-                    <span className="font-source-sans-pro font-[700] text-[42px]">
+                    <span className="font-source-sans-pro font-[700] text-[1.8rem] sm:text-[1.8rem] md:text-[1.9rem] lg:text-[2rem]">
                       {actualValues[index].value}
                     </span>
-                    <span className="ml-[4px]">
+                    <span className="ml-[4px] text-[1rem] sm:text-[1rem] md:text-[1.1rem] lg:text-[1.2rem]">
                       {actualValues[index].title}
                     </span>
                   </p>

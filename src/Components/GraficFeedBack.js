@@ -12,14 +12,17 @@ const GraficFeedBack = ({ data }) => {
   }, [data]);
 
   return (
-    <div className="bg-[#0A4840] ">
+    <div className="bg-[#0A4840]">
       {loadedData &&
         loadedData.map((item, index) => {
           const title = Object.keys(item)[0];
 
           return (
-            <div key={index} className="bg-[#0A4840]  rounded shadow">
-              <h2 className="text-xl  bg-[#093D37] font-semibold pl-[16px] pr-[16px] pt-[10px] pb-[10px]">
+            <div
+              key={index}
+              className="bg-[#0A4840] rounded shadow mb-[8px] md:mb-[8px]"
+            >
+              <h2 className="text-xl bg-[#093D37] font-semibold pl-[16px] pr-[16px] pt-[10px] pb-[10px]">
                 {title}
               </h2>
               <div className=" bg-[#0A4840] pl-[16px] pr-[16px] flex justify-center items-center">
