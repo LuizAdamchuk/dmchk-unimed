@@ -4,7 +4,7 @@
 
 Um projeto React com Tailwind CSS.
 
-[Projeto na Vercel](https://dmchk-unimed-3q7o1q1eu-luizadamchuk.vercel.app/)
+[Projeto na Vercel](https://dmchk-unimed.vercel.app/)
 
 
 ## 🚀 Começando
