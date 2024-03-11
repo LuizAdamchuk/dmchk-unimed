@@ -67,7 +67,7 @@ const MenuDetails = ({ data }) => {
               <div>
                 <h3
                   onClick={() => handleH3Click(subSection.subtitle)}
-                  className={`pt-[16px] pb-4 pl-4 font-roboto-slab font-[600] ${
+                  className={`pt-[16px] pb-4 pl-4 font-roboto-slab font-[600]  cursor-pointer  ${
                     clickedH3[subSection.subtitle]
                       ? "bg-[#B1D34B] text-[#0A5F55]"
                       : ""
@@ -75,16 +75,18 @@ const MenuDetails = ({ data }) => {
                 >
                   {subSection.subtitle}
                 </h3>
-                <ul className="font-source-sans-pro">
-                  {subSection.data.map((item) => (
-                    <li
-                      key={item}
-                      className="pt-2 pb-2 pl-10 mb-1 text-[#81C6AE]"
-                    >
-                      {item}
-                    </li>
-                  ))}
-                </ul>
+                {clickedH3[subSection.subtitle] && (
+                  <ul className="font-source-sans-pro">
+                    {subSection.data.map((item) => (
+                      <li
+                        key={item}
+                        className="pt-2 pb-2 pl-10 mb-1 text-[#81C6AE] hover:text-white cursor-pointer"
+                      >
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </div>
             ))}
           </div>
