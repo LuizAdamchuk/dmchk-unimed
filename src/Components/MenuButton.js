@@ -6,7 +6,7 @@ import { IconContext } from "react-icons";
 import { generateResponsiveFontSize } from "../shared";
 
 const button = tv({
-  base: `text-white inline-flex items-center font-source-sans-pro font-[400] text-[1rem] sm:text-[1rem] md:text-[1.1rem] lg:text-[1.2rem]`,
+  base: `text-white inline-flex items-center font-source-sans-pro font-[400] text-[1rem] sm:text-[1rem] md:text-[1.1rem] lg:text-[1.2rem] hover:text-white/80 transition-color`,
   variants: {
     size: {
       default: "h-10 px-4",

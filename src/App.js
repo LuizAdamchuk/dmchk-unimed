@@ -47,8 +47,8 @@ function App() {
             />
           </div>
           <div className="w-full md:w-1/2 max-w-[480px]">
-            <GraficFeedBack data={graficDetailsData} className="flex-1" />
-            <GraficFeedBack data={graficDetailsData} className="flex-1" />
+            <GraficFeedBack data={graficDetailsData[0]} className="flex-1" />
+            <GraficFeedBack data={graficDetailsData[1]} className="flex-1" />
           </div>
         </div>
         <MenuDetails data={menuData} />

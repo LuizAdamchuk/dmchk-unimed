@@ -25,19 +25,23 @@ const GraficFeedBack = ({ data }) => {
               <h2 className="text-xl bg-[#093D37] font-semibold pl-[16px] pr-[16px] pt-[10px] pb-[10px]">
                 {title}
               </h2>
-              <div className=" bg-[#0A4840] pl-[16px] pr-[16px] flex justify-center items-center">
-                <div className="w-1/5 flex items-center justify-center">
-                  <CircleComponent value={68} />
-                </div>
-                <div className="w-4/5">
-                  <ProgressBar
-                    score={68}
-                    promoters={76}
-                    neutrals={11}
-                    detractors={13}
-                  />
-                </div>
-              </div>
+              {item["ColoredBar"] &&
+                item["ColoredBar"].map((dataDatails, dataDatailsIndex) => (
+                  <div className="bg-[#0A4840] flex justify-center items-center w-full h-full px-4">
+                    <div className="items-center justify-center pr-4">
+                      <CircleComponent value={dataDatails.value} />
+                    </div>
+                    <div key={dataDatailsIndex} className="flex-grow">
+                      <ProgressBar
+                        score={dataDatails.value}
+                        promoters={dataDatails.promoters}
+                        neutrals={dataDatails.neutrals}
+                        detractors={dataDatails.detractors}
+                      />
+                    </div>
+                  </div>
+                ))}
+
               <div className="text-white pl-[16px] pr-[16px] pb-[16px]">
                 {item[title].map((detail, detailIndex) => {
                   const key = Object.keys(detail)[0];

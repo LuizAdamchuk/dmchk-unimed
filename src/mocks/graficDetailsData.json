@@ -1,24 +1,67 @@
 [
-  {
-    "NPS - Dez 2020": [
-      {
-        "Dez 2020": {
-          "value": 76,
-          "percent": -10.5
+  [
+    {
+      "NPS - Dez 2020": [
+        {
+          "Dez 2020": {
+            "value": 76,
+            "percent": -10.5
+          }
+        },
+        {
+          "Nov 2020": {
+            "value": 69,
+            "percent": -1.4
+          }
+        },
+        {
+          "Dez 2019": {
+            "value": 58,
+            "percent": 17.2
+          }
         }
-      },
-      {
-        "Nov 2020": {
-          "value": 69,
-          "percent": -1.4
+      ],
+      "ColoredBar": [
+        {
+          "value": 30,
+          "promoters": 20,
+          "neutrals": 70,
+          "detractors": 10
         }
-      },
-      {
-        "Dez 2019": {
-          "value": 58,
-          "percent": 17.2
+      ]
+    }
+  ],
+
+  [
+    {
+      "NPS - Dez 2021": [
+        {
+          "Dez 2020": {
+            "value": 76,
+            "percent": -10.5
+          }
+        },
+        {
+          "Nov 2020": {
+            "value": 69,
+            "percent": -1.4
+          }
+        },
+        {
+          "Dez 2019": {
+            "value": 58,
+            "percent": 17.2
+          }
         }
-      }
-    ]
-  }
+      ],
+      "ColoredBar": [
+        {
+          "value": 68,
+          "promoters": 76,
+          "neutrals": 11,
+          "detractors": 13
+        }
+      ]
+    }
+  ]
 ]

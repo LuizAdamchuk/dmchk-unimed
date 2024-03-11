@@ -4,13 +4,13 @@
       {
         "Dez 2020": {
           "value": 103.3,
-          "percent": -16.8
+          "percent": 16.8
         }
       },
       {
         "Nov 2020": {
           "value": 86.6,
-          "percent": -0.7
+          "percent": 0.7
         }
       },
       {
@@ -31,26 +31,26 @@
     "Faturamento Bruto - R$ Mi": [
       {
         "Dez 2020": {
-          "value": 103.3,
+          "value": 188.3,
           "percent": -16.8
         }
       },
       {
         "Nov 2020": {
-          "value": 86.6,
-          "percent": -0.7
+          "value": 82.6,
+          "percent": -1.7
         }
       },
       {
         "Dez 2019": {
-          "value": 89.2,
-          "percent": -3.7
+          "value": 79.2,
+          "percent": -5.7
         }
       },
       {
         "Jan 2021": {
-          "value": 108.4,
-          "percent": 5.2
+          "value": 138.4,
+          "percent": 2.2
         }
       }
     ]
@@ -59,26 +59,26 @@
     "Faturamento Bruto - R$ Mi": [
       {
         "Dez 2020": {
-          "value": 103.3,
+          "value": 113.3,
           "percent": -16.8
         }
       },
       {
         "Nov 2020": {
-          "value": 86.6,
-          "percent": -0.7
+          "value": 82.6,
+          "percent": 1.7
         }
       },
       {
         "Dez 2019": {
-          "value": 89.2,
-          "percent": -3.7
+          "value": 84.2,
+          "percent": 3.7
         }
       },
       {
         "Jan 2021": {
-          "value": 108.4,
-          "percent": 5.2
+          "value": 102.4,
+          "percent": -1.2
         }
       }
     ]

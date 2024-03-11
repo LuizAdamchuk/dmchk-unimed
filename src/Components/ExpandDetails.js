@@ -56,7 +56,6 @@ const ExpandableDetails = ({ data }) => {
             <div
               key={index}
               className="bg-[#0A4840] rounded shadow mb-[0.6rem] sm:mb-[0.6rem] md:mb-[0.8rem]"
-              onClick={() => handleExpand(index)}
             >
               <h2 className="bg-[#093D37] pl-[16px] pr-[16px] pt-[10px] pb-[10px] font-semibold text-[1rem] sm:text-[1rem] md:text-[1.1rem] lg:text-[1.2rem]">
                 {title}
@@ -79,6 +78,7 @@ const ExpandableDetails = ({ data }) => {
                   icon={true}
                   iconSize="1rem"
                   className="ml-[72px]"
+                  onClick={() => handleExpand(index)}
                 >
                   DETALHAR
                 </Button>

@@ -38,27 +38,27 @@ const MenuDetails = ({ data }) => {
 
   if (!menuOpen) return null;
   return (
-    <div
+    <aside
       className={menuDetailsVariants({
         visibility: menuOpen ? "visible" : "hidden",
         sectionActive: clickedH3["Indicadores Estratégicos"],
       })}
     >
       <div className=" bg-[url('../../public/menu-details.png')] text-white w-[300px] h-screen fixed top-0 left-0 z-10 ">
-        <div className="flex justify-between items-center mb-4">
+        <header className="flex justify-between items-center mb-4">
           <div className="pl-[16px] pt-[16px] pr-[16px]">
             <UnimedIcon />
           </div>
           <button
             onClick={() => setMenuOpen(false)}
-            className="flex items-center space-x-2 text-white font-source-sans-pro  pl-[16px] pt-[16px] pr-[16px]"
+            className="flex items-center space-x-2 text-white font-source-sans-pro  pl-[16px] pt-[16px] pr-[16px] hover:text-white/80 transition-colors"
           >
-            <span>Fechar</span> <CloseIcon />
+            <span>Fechar</span> <CloseIcon width={12} height={12} />
           </button>
-        </div>
+        </header>
 
         {loadedData.map((section) => (
-          <div key={section.title}>
+          <nav key={section.title}>
             <h2 className="pt-[16px] pb-[16px] pl-[16px] font-roboto-slab font-[800]">
               {section.title}
             </h2>
@@ -69,9 +69,9 @@ const MenuDetails = ({ data }) => {
                   onClick={() => handleH3Click(subSection.subtitle)}
                   className={`pt-[16px] pb-4 pl-4 font-roboto-slab font-[600]  cursor-pointer  ${
                     clickedH3[subSection.subtitle]
-                      ? "bg-[#B1D34B] text-[#0A5F55]"
-                      : ""
-                  }`}
+                      ? "bg-[#B1D34B] text-[#0A5F55] hover:text-[#0A5F55]/80 transition-color"
+                      : "hover:text-white/80 transition-color"
+                  } `}
                 >
                   {subSection.subtitle}
                 </h3>
@@ -80,7 +80,7 @@ const MenuDetails = ({ data }) => {
                     {subSection.data.map((item) => (
                       <li
                         key={item}
-                        className="pt-2 pb-2 pl-10 mb-1 text-[#81C6AE] hover:text-white cursor-pointer"
+                        className="pt-2 pb-2 pl-10 mb-1 text-[#81C6AE] hover:text-white cursor-pointer transition-color"
                       >
                         {item}
                       </li>
@@ -89,10 +89,10 @@ const MenuDetails = ({ data }) => {
                 )}
               </div>
             ))}
-          </div>
+          </nav>
         ))}
       </div>
-    </div>
+    </aside>
   );
 };
 
