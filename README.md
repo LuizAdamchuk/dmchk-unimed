@@ -4,6 +4,9 @@
 
 Um projeto React com Tailwind CSS.
 
+[Projeto na Vercel](https://dmchk-unimed-3q7o1q1eu-luizadamchuk.vercel.app/)
+
+
 ## 🚀 Começando
 
 Essas instruções fornecerão uma cópia do projeto em execução na sua máquina local para fins de desenvolvimento e teste.
