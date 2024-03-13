@@ -4,7 +4,7 @@ import { tv } from "tailwind-variants";
 import { CiCirclePlus } from "react-icons/ci";
 
 const button = tv({
-  base: "bg-[#C4DE77] text-[#0A5F55] border border-[#C3DD73] rounded-full inline-flex items-center justify-center font-roboto-slab mr-[16px] hover:bg-[#C4DE77]/80 hover:text-[#0A5F55]/90 transition-color",
+  base: "bg-[#C4DE77] text-[#0A5F55]  rounded-full inline-flex items-center justify-center font-roboto-slab mr-[16px] hover:bg-[#C4DE77]/60 focus:bg-[#C4DE77]/90 active:bg-[#C4DE77]/30 transition-color duration-200",
   variants: {
     size: {
       default: "h-10 px-4",

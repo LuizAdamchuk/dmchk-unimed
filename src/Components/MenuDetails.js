@@ -59,7 +59,7 @@ const MenuDetails = ({ data }) => {
 
         {loadedData.map((section) => (
           <nav key={section.title}>
-            <h2 className="pt-[16px] pb-[16px] pl-[16px] font-roboto-slab font-[800]">
+            <h2 className="pt-[16px] pb-[16px] pl-[16px] font-roboto-slab font-[800] ">
               {section.title}
             </h2>
 
@@ -69,8 +69,8 @@ const MenuDetails = ({ data }) => {
                   onClick={() => handleH3Click(subSection.subtitle)}
                   className={`pt-[16px] pb-4 pl-4 font-roboto-slab font-[600]  cursor-pointer  ${
                     clickedH3[subSection.subtitle]
-                      ? "bg-[#B1D34B] text-[#0A5F55] hover:text-[#0A5F55]/80 transition-color"
-                      : "hover:text-white/80 transition-color"
+                      ? "bg-[#B1D34B] text-[#0A5F55] hover:text-[#0A5F55]/80 focus:text-[#0A5F55]/90 active:bg-[#B1D34B]/40 transition-color duration-200"
+                      : "hover:text-white/80  transition-color duration-200"
                   } `}
                 >
                   {subSection.subtitle}

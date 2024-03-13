@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Tabs from "./Components/Tabs";
 import MenuButton from "./Components/MenuButton";
 import ExpandableDetails from "./Components/ExpandDetails";
@@ -11,8 +11,18 @@ import menuData from "./mocks/menuData.json";
 
 import { MenuProvider } from "./Context/MenuContext";
 import { ClockIcon } from "./assets/ClockIcon";
+import { SkeletonLoader } from "./Components/SkeletonLoader";
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <MenuProvider>
       <div
@@ -39,18 +49,23 @@ function App() {
             responsivity={0.6}
           />
         </span>
-        <div className="flex flex-col  md:flex-row space-x-0 justify-center md:space-x-4 space-y-4 md:space-y-0 mx-0 md:mx-4">
-          <div className="w-full md:w-1/2 max-w-[480px]">
-            <ExpandableDetails
-              data={ExpandableDetailsData}
-              className="flex-1"
-            />
+        {isLoading ? (
+          <SkeletonLoader />
+        ) : (
+          <div className="flex flex-col  md:flex-row space-x-0 justify-center md:space-x-4 space-y-4 md:space-y-0 mx-0 md:mx-4">
+            <div className="w-full md:w-1/2 max-w-[480px]">
+              <ExpandableDetails
+                data={ExpandableDetailsData}
+                className="flex-1"
+              />
+            </div>
+            <div className="w-full md:w-1/2 max-w-[480px]">
+              <GraficFeedBack data={graficDetailsData[0]} className="flex-1" />
+              <GraficFeedBack data={graficDetailsData[1]} className="flex-1" />
+            </div>
           </div>
-          <div className="w-full md:w-1/2 max-w-[480px]">
-            <GraficFeedBack data={graficDetailsData[0]} className="flex-1" />
-            <GraficFeedBack data={graficDetailsData[1]} className="flex-1" />
-          </div>
-        </div>
+        )}
+
         <MenuDetails data={menuData} />
       </div>
     </MenuProvider>
